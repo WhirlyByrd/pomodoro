@@ -15,6 +15,7 @@ function Settings() {
       thumbClassName={'thumb'}
       trackClassName={'track'}
       value={settingsInfo.workMinutes}
+      onChange={newValue => settingsInfo.setWorkMinutes(newValue)}
       min={1}
       max={120}
       />
@@ -24,6 +25,7 @@ function Settings() {
       thumbClassName={'thumb'}
       trackClassName={'track'}
       value={settingsInfo.breakMinutes}
+      onChange={newValue => settingsInfo.setBreakMinutes(newValue)}
       min={1}
       max={120}
       />
