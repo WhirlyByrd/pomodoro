@@ -5,6 +5,7 @@ import SettingsContext from './SettingsContext';
 import {useContext} from 'react'
 import BackButton from './BackButton';
 
+
 function Settings() {
   const settingsInfo = useContext(SettingsContext);
 
@@ -32,7 +33,7 @@ function Settings() {
       />
 
       <div style={{textAlign:'center', marginTop:'20px'}}>
-      <BackButton />
+      <BackButton onClick={() => settingsInfo.setShowSettings(false)}/>
       </div>
 
       </div>
